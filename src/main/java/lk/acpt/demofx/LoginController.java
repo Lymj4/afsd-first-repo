@@ -16,6 +16,8 @@ public class LoginController {
         String email = txtEmail.getText();
         String password = txtPassword.getText();
 
-        System.out.println(email+" "+password);
+        if(email.equals("admin") && password.equals("admin123")) {
+            System.out.println("Login Successful");
+        }
     }
 }
